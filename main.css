@@ -10,6 +10,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+audio {
+    position: relative;
+    width:100%;
+}
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -36,6 +41,20 @@ body {
 .title-slide {
     background: url('images/tea_blur.jpg') center center;
     background-size: cover;
+}
+
+.img-container {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+
+    background: url('images/garden_ex.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .banner {
@@ -79,8 +98,13 @@ body {
 .text-box {
     position:absolute;
     width: 100%;
-    height: 50%;
-    top:0;
+    top:50%;
     left:0;
     overflow:auto;
+    bottom: 30px;
+}
+
+.text-box > p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
