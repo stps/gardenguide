@@ -6,7 +6,7 @@ body {
     background: #eee;
     font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#000;
+    color:#4a4a4a;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ audio {
     height: 100%;
 }
 .swiper-slide {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     background: #fff;
     /* Center slide text vertically */
@@ -36,6 +36,7 @@ audio {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .title-slide {
@@ -96,11 +97,12 @@ audio {
 }
 
 .text-box {
+    text-indent: 40px;
     position:absolute;
     width: 100%;
     top:50%;
     left:0;
-    overflow:auto;
+    margin-top: 10px;
     bottom: 30px;
 }
 
