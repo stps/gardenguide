@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/css/swiper.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Google Fonts -->
@@ -41,7 +42,7 @@
                             <audio controls>
                                 <source src="" type="audio/mpeg">
                             </audio>
-                            <div class="text-box">
+                            <div class="text-box ignoreTouchClass">
                                 <p>Welcome to the Japan House Gardens. I am James Bier, designer and builder of the gardens and would like to take you through the five stops along the walk explaining the concepts and details about Japanese gardens that might help you more to enjoy your stroll around Japan House. Take your time and absorb details as you go along.</p>
 
                                 <p>There are more than one kind of Japanese Garden, mostly tied to the country's history and they can be classified in four or five categories. The oldest style is a Hill and Pond Garden, used sparingly but going back to its roots in the Heian Period of 794-1185. Only a few remnants of these original gardens exist today in Japan but modification of this concept can be found at temples and modern gardens outside of religious areas.</p>
@@ -55,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide">
+<!--             <div class="swiper-slide">
                 <div class="swiper-container swiper-container-v">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -72,9 +73,28 @@
                             <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
                         </div>
                     </div>
-                    <!-- Add Scroll Bar -->
                     <div class="swiper-scrollbar"></div>
                  </div>
+            </div> -->
+
+            <div class="swiper-slide swiper-slide-custom">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-container"></div>
+                            <audio controls>
+                                <source src="" type="audio/mpeg">
+                            </audio>
+                            <div class="text-box ignoreTouchClass">
+                                <p>Welcome to the Japan House Gardens. I am James Bier, designer and builder of the gardens and would like to take you through the five stops along the walk explaining the concepts and details about Japanese gardens that might help you more to enjoy your stroll around Japan House. Take your time and absorb details as you go along.</p>
+
+                                <p>There are more than one kind of Japanese Garden, mostly tied to the country's history and they can be classified in four or five categories. The oldest style is a Hill and Pond Garden, used sparingly but going back to its roots in the Heian Period of 794-1185. Only a few remnants of these original gardens exist today in Japan but modification of this concept can be found at temples and modern gardens outside of religious areas.</p>
+
+                                <p>Beginning at the end of the 12th Century, with the introduction of Zen Buddhism from China, came the concept of the Dry Garden, the raked gravel and rocks so commonly imagined in the West as THE Japanese garden. The idea of a raked gravel area associated with a shrine and being a sacred area goes back to at least 300 B.C. with Shintoism and animism, the original religions of Japan. The concept of raked gravel in the dry gardens we see now has borrowed this concept but not seeing it sacred but more respectful.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
@@ -98,10 +118,11 @@
     var swiperH = new Swiper('.swiper-container-h', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        paginationType: 'progress'
+        paginationType: 'progress',
+        a11y: true
     });
 
-    var swiperV = new Swiper('.swiper-container-v', {
+    var swiperV = new Swiper('.swiper-container-v', {  // MAY NEED to separate out, to correspond with each slide
         scrollbar: '.swiper-scrollbar',
         direction: 'vertical',
         slidesPerView: 'auto',
