@@ -121,8 +121,15 @@ audio {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 5px;
-    border-left: 1px solid #ff8261;
     font-size: 14px;
+}
+
+.p-1 {
+    border-left: 2px solid #ff8261;
+}
+
+.footer-gray {
+    background-color: #e1e1e1;
 }
 
 .swiper-container-v .swiper-slide {
