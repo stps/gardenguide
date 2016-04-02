@@ -7719,3 +7719,34 @@ footer a {
 video {
   margin: auto;
 }
+
+.ill-link {
+    height: 44px; 
+    margin-right: 10px;
+}
+.faa-link {
+    height: 50px; 
+    margin-right:10px;
+}
+.jh-link {
+    height: 30px;
+    margin-right:10px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    .jh-link {
+        height: 25px;
+        margin-right:5px;
+    }
+    .ill-link {
+        height: 34px;
+        margin-right:5px;
+    }
+    .faa-link {
+        height: 40px;
+        margin-right:5px;
+    }
+}

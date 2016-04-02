@@ -41,9 +41,13 @@
                 <div class="swiper-container swiper-container-v">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="img-container"></div>
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
+                            <div class="img-container">
+                                <div class="title-block">
+                                    <h4>Introduction</h2>
+                                </div>
+                            </div>
+                            <audio class="swiper-no-swiping" controls>
+                                <source src="STE-000.wav" type="audio/mpeg">
                             </audio>
                             <div class="text-box ignoreTouchClass">
                                 <p class="p-1">Welcome to the Japan House Gardens. I am James Bier, designer and builder of the gardens and would like to take you through the five stops along the walk explaining the concepts and details about Japanese gardens that might help you more to enjoy your stroll around Japan House. Take your time and absorb details as you go along.</p>
@@ -56,17 +60,32 @@
 
                                 <p>About that same time, small enclosed gardens were introduced in Kyoto by wealthy merchants. Houses at that time were taxed by the width of the house fronting the street. So, to circumvent that, lots of houses were made narrow but to go back a lengthy distance and butting up against the neighbors' houses. To get ventilation and sunlight inside the house, small areas in the house were opened up to the sky but enclosed on three or four sides by rooms of siding shoji and walls.</p>
                             </div>
-                            <footer class="footer-gray">
+                            <!--<footer class="footer-gray">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <img src="images/prof50.gif" style="height:44px; margin-right: 10px">
-                                            <img src="images/FAA-NewMark-dkslateblue.png" style="height:50px; margin-right:10px">
-                                            <img src="images/JH_Kanji_horizontal.png" style="height:30px; margin-right:10px">
+                                            <a href="http://illinois.edu">  
+                                            <img class="ill-link" src="images/prof50.gif"></a>
+                                            <a href="http://faa.illinois.edu">
+                                            <img class="faa-link" src="images/FAA-NewMark-dkslateblue.png"></a>
+                                            <a href="http://japanhouse.art.illinois.edu">
+                                            <img class="jh-link" src="images/JH_Kanji_horizontal.png"></a>
                                         </div>
                                     </div>
                                 </div>
-                            </footer>
+                            </footer> -->
+                            <div class="slide-footer">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href="http://illinois.edu">  
+                                        <img class="ill-link" src="images/prof50.gif"></a>
+                                        <a href="http://faa.illinois.edu">
+                                        <img class="faa-link" src="images/FAA-NewMark-dkslateblue.png"></a>
+                                        <a href="http://japanhouse.art.illinois.edu">
+                                        <img class="jh-link" src="images/JH_Kanji_horizontal.png"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Add Scroll Bar -->
@@ -75,31 +94,21 @@
             </div>
 
             <div class="swiper-slide swiper-slide-custom">
-                <div class="swiper-container swiper-container-v">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="img-container"></div>
-                            <audio controls>
-                                <source src="" type="audio/mpeg">
-                            </audio>
-                            <div class="text-box ignoreTouchClass">
-                                <p>Welcome to the Japan House Gardens. I am James Bier, designer and builder of the gardens and would like to take you through the five stops along the walk explaining the concepts and details about Japanese gardens that might help you more to enjoy your stroll around Japan House. Take your time and absorb details as you go along.</p>
-
-                                <p>There are more than one kind of Japanese Garden, mostly tied to the country's history and they can be classified in four or five categories. The oldest style is a Hill and Pond Garden, used sparingly but going back to its roots in the Heian Period of 794-1185. Only a few remnants of these original gardens exist today in Japan but modification of this concept can be found at temples and modern gardens outside of religious areas.</p>
-
-                                <p>Beginning at the end of the 12th Century, with the introduction of Zen Buddhism from China, came the concept of the Dry Garden, the raked gravel and rocks so commonly imagined in the West as THE Japanese garden. The idea of a raked gravel area associated with a shrine and being a sacred area goes back to at least 300 B.C. with Shintoism and animism, the original religions of Japan. The concept of raked gravel in the dry gardens we see now has borrowed this concept but not seeing it sacred but more respectful.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide swiper-slide-custom">
+                
+            </div>
+            <div class="swiper-slide swiper-slide-custom">
+                
+            </div>
+            <div class="swiper-slide swiper-slide-custom">
+                
+            </div>
+            <div class="swiper-slide swiper-slide-custom">
+                
+            </div>
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -116,7 +125,8 @@
         pagination: '.swiper-pagination',
         paginationClickable: true,
         paginationType: 'progress',
-        a11y: true
+        a11y: true,
+        noSwipingClass: 'swiper-no-swiping'
     });
 
     var swiperV = new Swiper('.swiper-container-v', {  // MAY NEED to separate out, to correspond with each slide
@@ -126,9 +136,16 @@
         mousewheelControl: true,
         freeMode: true
     });
-    // var swiperWrapper = $('.swiper-wrapper'); 
-    // var imgContainer = $('.img-container');
-    // imgContainer.css('height', swiperWrapper.height()/2 + 'px');
+    </script>
+
+    <script>
+    $("audio").on("play", function(){
+        var _this = $(this);
+        $("audio").each(function(i,el){
+            if(!$(el).is(_this))
+                $(el).get(0).pause();
+        });
+    });
     </script>
 </body>
 </html>
