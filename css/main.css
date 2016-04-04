@@ -137,7 +137,7 @@ audio {
 
 .title-block {
     background:rgba(0,0,0,0.6);
-    width: 200px;
+    width: 150px;
     height: 50px;
     text-align: center;
     color: #fff;
@@ -175,3 +175,16 @@ and (orientation : portrait) {
         margin-bottom: -25px;
     }
 }
+
+@media only screen
+and (min-width : 768px) {
+    .text-box {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    audio {
+        width:80%;
+    }
+}
+
+
