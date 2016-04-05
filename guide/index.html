@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
 
     <title>Japan House | James and Lorene Bier Gardens Guide</title>
 
@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/css/swiper.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/swipebox.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -43,14 +44,17 @@
                 <div class="swiper-container swiper-container-v">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="img-container">
-                                <div class="title-block">
-                                    <h4>Introduction</h2>
+                            <a href="../images/front.jpg" class="swipebox swiper-no-swiping" title="Front of Japan House">
+                                <div class="img-container">
+                                    <!-- <div class="title-block">
+                                        <h4>Introduction</h4>
+                                    </div> -->
                                 </div>
-                            </div>
+                            </a>
                             <audio class="swiper-no-swiping" controls>
                                 <source src="STE-000.wav" type="audio/mpeg">
                             </audio>
+                            <h3>Introduction</h3>
                             <div class="text-box ignoreTouchClass">
                                 <p class="p-1">Welcome to Japan House Gardens. My name is James Bier, designer and builder of the gardens. I would like to take you through the six stops along the walk explaining the concepts and details about Japanese gardens that might help you enjoy your stroll around Japan House. Take your time and absorb details as you go along.</p>
 
@@ -63,16 +67,18 @@
                                 <p>A fourth style of garden is on a grand scale, focusing on a pond or series of ponds, and has paths around the rim allowing special aesthetic views at various points to be admired. This is called a Stroll or Walking Garden.  I will talk more about this garden at our last stop. Another category of Japanese garden is emerging which I will call a Residence Garden, which combines the ideas of all other gardens in original uses. Not only are they found in residences but also today in restaurants, hotels, business offices and other places. In the past, many excellent gardens were private and were not viewed by the public but now some are becoming more well-known and some made accessible to the public.</p>
 
                                 <p>At Japan House we have two major gardens, the Tea Garden and Dry Garden available for you to walk through at your pleasure. The Japan House front door area is somewhat enclosed but it has not been suitable to create as a Courtyard Garden and the pond in front of Japan House is planned someday to be a Stroll Garden.  At the back entrance to Japan House is the Gunji Chabana Garden containing a variety of plants used in lkebana, Japanese flower arranging. Most of the plants there have a Japanese origin.  In time, we expect to expand the area with more varieties native to Japan. At the north parking lot past the Cherry Blossom Walkway is an Entrance Garden. While it does not follow a traditional style of garden, it does contain elements used in the other gardens.</p>
+                                <hr>
+                                <h5>Swipe to continue -></h5>
                             </div>
                             <div class="slide-footer">
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <a target="_blank" href="http://illinois.edu">  
-                                        <img class="ill-link" src="images/prof50.gif"></a>
+                                        <img class="ill-link" src="../images/prof50.gif"></a>
                                         <a target="_blank" href="http://faa.illinois.edu">
-                                        <img class="faa-link" src="images/FAA-NewMark-dkslateblue.png"></a>
+                                        <img class="faa-link" src="../images/FAA-NewMark-dkslateblue.png"></a>
                                         <a target="_blank" href="http://japanhouse.art.illinois.edu">
-                                        <img class="jh-link" src="images/JH_Kanji_horizontal.png"></a>
+                                        <img class="jh-link" src="../images/JH_Kanji_horizontal.png"></a>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +95,7 @@
                         <div class="swiper-slide">
                             <div class="img-container">
                                 <div class="title-block">
-                                    <h4>Tea Garden</h2>
+                                    <h4>Tea Garden</h4>
                                 </div>
                             </div>
                             <audio class="swiper-no-swiping" controls>
@@ -108,11 +114,11 @@
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <a target="_blank" href="http://illinois.edu">  
-                                        <img class="ill-link" src="images/prof50.gif"></a>
+                                        <img class="ill-link" src="../images/prof50.gif"></a>
                                         <a target="_blank" href="http://faa.illinois.edu">
-                                        <img class="faa-link" src="images/FAA-NewMark-dkslateblue.png"></a>
+                                        <img class="faa-link" src="../images/FAA-NewMark-dkslateblue.png"></a>
                                         <a target="_blank" href="http://japanhouse.art.illinois.edu">
-                                        <img class="jh-link" src="images/JH_Kanji_horizontal.png"></a>
+                                        <img class="jh-link" src="../images/JH_Kanji_horizontal.png"></a>
                                     </div>
                                 </div>
                             </div>
@@ -146,8 +152,9 @@
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.swipebox.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -176,6 +183,12 @@
                 $(el).get(0).pause();
         });
     });
+    </script>
+
+    <script type="text/javascript">
+    ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+    } )( jQuery );
     </script>
 </body>
 </html>

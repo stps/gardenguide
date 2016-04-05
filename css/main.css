@@ -51,13 +51,13 @@ audio {
 }
 
 .img-container {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     position: relative;
     top: 0%;
 
-    background: url('../images/garden_ex.jpg') center center;
+    background: url('../images/front.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -183,8 +183,10 @@ and (min-width : 768px) {
         padding-right: 50px;
     }
     audio {
-        width:80%;
+        width:90%;
     }
 }
 
-
+hr {
+    border-color: #e1e1e1;
+}
