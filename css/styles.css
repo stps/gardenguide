@@ -7774,3 +7774,9 @@ and (orientation : portrait) {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc6c5b7b', endColorstr='#cc355c7d', GradientType=0);
   content: "";
 }
+
+.question {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
