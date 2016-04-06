@@ -6972,7 +6972,7 @@ body {
 }
 /* Hero :: Agency */
 .hero_agency {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../img/hero.jpg);
   text-align: center;
 }
 /* Hero :: Sign Up */
@@ -7752,12 +7752,12 @@ and (orientation : portrait) {
 }
 
 .hero-faq {
-  background-image: url(../images/gazebo.jpg);
+  background-image: url(../img/gazebo.jpg);
   text-align: center;
 }
 
 .hero-interview {
-  background-image: url(../images/azumaya.jpg);
+  background-image: url(../img/azumaya.jpg);
   text-align: center;
 }
 

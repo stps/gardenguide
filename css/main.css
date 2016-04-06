@@ -46,7 +46,7 @@ audio {
 }
 
 .title-slide {
-    background: url('../images/tea_blur.jpg') center center;
+    background: url('../img/tea_blur.jpg') center center;
     background-size: cover;
 }
 
@@ -57,7 +57,7 @@ audio {
     position: relative;
     top: 0%;
 
-    background: url('../images/1/front.jpg') center center;
+    background: url('../img/1/front.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -100,7 +100,7 @@ audio {
     height: 86px;
     margin-left: auto;
     margin-right: 15px;
-    background: url('../images/jh_kanji_small.png') center center;
+    background: url('../img/jh_kanji_small.png') center center;
     background-size: cover;
 }
 
@@ -192,7 +192,7 @@ hr {
 }
 
 .img2 {
-    background: url('../images/2/dsc_0780_8250309260_o.jpg') center center;
+    background: url('../img/2/dsc_0780_8250309260_o.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -200,7 +200,7 @@ hr {
 }
 
 .img3 {
-    background: url('../images/3/DSC_0794.jpg') center center;
+    background: url('../img/3/DSC_0794.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -208,7 +208,7 @@ hr {
 }
 
 .img4 {
-    background: url('../images/4/DSC_0994.jpg') center center;
+    background: url('../img/4/DSC_0994.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -216,7 +216,7 @@ hr {
 }
 
 .img5 {
-    background: url('../images/5/17206065183_2075eef7b6_k.jpg') center center;
+    background: url('../img/5/17206065183_2075eef7b6_k.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -224,7 +224,7 @@ hr {
 }
 
 .img6 {
-    background: url('../images/6/img_2385_8260872595_o.jpg') center center;
+    background: url('../img/6/img_2385_8260872595_o.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
