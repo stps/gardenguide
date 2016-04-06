@@ -7752,7 +7752,7 @@ and (orientation : portrait) {
 }
 
 .hero-faq {
-  background-image: url(../images/azumaya.jpg);
+  background-image: url(../images/gazebo.jpg);
   text-align: center;
 }
 
@@ -7775,8 +7775,27 @@ and (orientation : portrait) {
   content: "";
 }
 
+.hero-faq::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, rgba(50, 81, 123, 0.43) 0%, rgba(67, 47, 40, 0.24) 100%);
+  background-image: -o-linear-gradient(top, rgba(50, 81, 123, 0.43) 0%, rgba(67, 47, 40, 0.24) 100%);
+  background-image: linear-gradient(to bottom, rgba(50, 81, 123, 0.43) 0%, rgba(67, 47, 40, 0.24) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc6c5b7b', endColorstr='#cc355c7d', GradientType=0);
+  content: "";
+}
+
 .question {
   text-align: left;
   margin-bottom: 40px;
   margin-top: 40px;
 }
+
+.heading__sub {
+    color: #000;
+}
+
