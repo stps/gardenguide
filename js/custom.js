@@ -1,14 +1,3 @@
-/*------------------------------------------------------------------
-Project:        Landitt
-Author:         Yevgeny Simzikov
-URL:            http://simpleqode.com/
-                https://twitter.com/YevSim
-                https://www.facebook.com/simpleqode
-Version:        1.0.0
-Created:        27/05/2015
-Last change:    27/05/2015
--------------------------------------------------------------------*/
-
 /**
  * Navigation
  */
@@ -60,16 +49,3 @@ $(function() {
         }
     });
 });
-
-
-
-/**
- * Wow plugin bottom offset calculation
- */
-
-$(".wow").each(function() {
-    var wowHeight = $(this).height();
-    $(this).attr("data-wow-offset", wowHeight);
-});
-
-new WOW().init();
